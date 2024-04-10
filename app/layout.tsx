@@ -6,16 +6,16 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "Pagina de emprendimiento SJT",
-    template: "%s | emprendimiento SJT",
+    default: "Futurus",
+    template: "%s | Futurus",
   },
-  description: "Pagina de emprendimiento SJT",
+  description: "Futurus | Un paso hacia el futuro",
   openGraph: {
-    title: "Pagina de emprendimiento SJT",
+    title: "Futrus",
     description:
-      "Pagina de emprendimiento SJT",
+      "Futurus | Un paso hacia el futuro",
     url: "https://emprendimientosjt.vercel.app/",
-    siteName: "EmprendimientoSJT",
+    siteName: "Futurus",
     images: [
       {
         url: "https://emprendimientosjt.vercel.app/og.png",
