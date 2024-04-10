@@ -42,6 +42,6 @@ export default async function incr(req: NextRequest): Promise<NextResponse> {
       new NextResponse(null, { status: 202 });
     }
   }
-  await redis.incr(["pageviews", "https://emprendimientosjt.vercel.app/products", slug].join(":"));
+  await redis.incr(["pageviews", "products", slug].join(":"));
   return new NextResponse(null, { status: 202 });
 }
