@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     title: "Pagina de emprendimiento SJT",
     description:
       "Pagina de emprendimiento SJT",
-    url: "https://chronark.com",
+    url: "https://emprendimientosjt.vercel.app/",
     siteName: "EmprendimientoSJT",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://emprendimientosjt.vercel.app/og.png",
         width: 1920,
         height: 1080,
       },
