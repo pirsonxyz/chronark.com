@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   description: "Futurus | Un paso hacia el futuro",
   openGraph: {
-    title: "Futrus",
+    title: "Futurus",
     description:
       "Futurus | Un paso hacia el futuro",
     url: "https://emprendimientosjt.vercel.app/",
