@@ -7,9 +7,9 @@ import { Card } from "../components/card";
 const socials = [
 	{
 		icon: <Instagram size={20} />,
-		href: "",
+		href: "https://www.instagram.com/futurus.sjt/",
 		label: "Instagram",
-		handle: "@porcrear",
+		handle: "@futurus.sjt",
 	},
 	{
 		icon: <Mail size={20} />,
