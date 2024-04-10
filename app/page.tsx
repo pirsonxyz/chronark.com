@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import { Analytics } from "@vercel/analytics/react"
 
 const navigation = [
   { name: "Productos", href: "https://emprendimientosjt.vercel.app/products" },
@@ -44,6 +45,7 @@ export default function Home() {
             Pirson Bethancourt
           </Link>
         </h2>
+        <Analytics />
       </div>
     </div>
   );
