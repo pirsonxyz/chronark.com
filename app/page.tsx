@@ -3,8 +3,8 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  { name: "Productos", href: "https://emprendimientosjt.vercel.app/" },
-  { name: "Contacto", href: "https://emprendimientosjt.vercel.app/" },
+  { name: "Productos", href: "https://emprendimientosjt.vercel.app/products" },
+  { name: "Contacto", href: "https://emprendimientosjt.vercel.app/contact" },
 ];
 
 export default function Home() {
