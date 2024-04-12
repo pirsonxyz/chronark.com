@@ -13,9 +13,9 @@ const socials = [
 	},
 	{
 		icon: <Mail size={20} />,
-		href: "mailto:pirsonbethancourt039@gmail.com",
-		label: "Email",
-		handle: "Mail",
+		href: "mailto:futurussjt@outlook.es",
+		label: "Nuesto Mail",
+		handle: "futurussjt@outlook.es",
 	},
 	{
 		icon: <Phone size={20} />,
