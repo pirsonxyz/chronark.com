@@ -24,13 +24,19 @@ export default async function ProjectsPage() {
   const featured = allProjects.find((project) => project.slug === "brownie")!;
   const top2 = allProjects.find((project) => project.slug === "ciphone")!;
   const top3 = allProjects.find((project) => project.slug === "airpods")!;
+  const top4 = allProjects.find((project) => project.slug === "jbl")!;
+  const top5 = allProjects.find((project) => project.slug === "poppit")!;
+  const top6 = allProjects.find((project) => project.slug === "iphonepriv")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
       (project) =>
         project.slug !== featured.slug &&
         project.slug !== top2.slug &&
-        project.slug !== top3.slug,
+        project.slug !== top3.slug &&
+        project.slug !== top4.slug &&
+        project.slug !== top5.slug &&
+        project.slug !== top6.slug,
     )
     .sort(
       (a, b) =>
@@ -55,6 +61,7 @@ export default async function ProjectsPage() {
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
             <Link href={`https://futurussjt.vercel.app/products/${featured.slug}`}>
+              <img src="https://cakesbymk.com/wp-content/uploads/2023/01/Template-Size-for-Blog-Photos-15-802x1024.jpg"></img>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-zinc-100">
@@ -90,7 +97,7 @@ export default async function ProjectsPage() {
           </Card>
 
           <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-            {[top2, top3].map((project) => (
+            {[top2, top3, top4, top5, top6].map((project) => (
               <Card key={project.slug}>
                 <Article project={project} views={views[project.slug] ?? 0} />
               </Card>
