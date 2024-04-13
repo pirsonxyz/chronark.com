@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     title: "Futūrus",
     description:
       "Futūrus | Un paso hacia el futuro",
-    url: "https://emprendimientosjt.vercel.app/",
+    url: "https://futurussjt.vercel.app/",
     siteName: "Fūturus",
     images: [
       {
-        url: "https://emprendimientosjt.vercel.app/og.png",
+        url: "https://futurussjt.vercel.app/og.png",
         width: 1920,
         height: 1080,
       },

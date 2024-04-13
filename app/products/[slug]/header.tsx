@@ -73,7 +73,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 									} `}
 							/>
 						</Link>
-						<Link target="_blank" href="">
+						<Link target="_blank" href="https://futurussjt.vercel.app/contact">
 							<Phone
 								className={`w-6 h-6 duration-200 hover:font-medium ${isIntersecting
 									? " text-zinc-400 hover:text-zinc-100"
