@@ -5,8 +5,8 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const navigation = [
-  { name: "Productos", href: "https://emprendimientosjt.vercel.app/products" },
-  { name: "Contacto", href: "https://emprendimientosjt.vercel.app/contact" },
+  { name: "Productos", href: "/products" },
+  { name: "Contacto", href: "/contact" },
 ];
 
 export default function Home() {
