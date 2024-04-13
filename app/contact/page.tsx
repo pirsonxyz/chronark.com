@@ -21,7 +21,7 @@ const socials = [
 		icon: <Phone size={20} />,
 		href: "/",
 		label: "Whatsapp",
-		handle: "falta el numero",
+		handle: "+1 (829) 504-1177",
 	},
 
 
