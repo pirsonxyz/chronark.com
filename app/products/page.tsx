@@ -47,7 +47,7 @@ export default async function ProjectsPage() {
             Productos
           </h2>
           <p className="mt-4 text-zinc-400">
-            Nuestro Productos!
+            Nuestro Productos, si te interesa alguno nos puedes contactar!
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
