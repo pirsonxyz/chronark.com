@@ -15,7 +15,6 @@ Futūrus, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tail
 
 ```sh-session
 git clone https://github.com/chronark/chronark.com.git
-cd chronark.com
 ```
 
 
