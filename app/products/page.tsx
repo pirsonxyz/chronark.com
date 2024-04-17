@@ -24,7 +24,6 @@ export default async function ProjectsPage() {
   const featured = allProjects.find((project) => project.slug === "brownie")!;
   const top2 = allProjects.find((project) => project.slug === "ciphone")!;
   const top3 = allProjects.find((project) => project.slug === "airpods")!;
-  const top4 = allProjects.find((project) => project.slug === "jbl")!;
   const top5 = allProjects.find((project) => project.slug === "poppit")!;
   const top6 = allProjects.find((project) => project.slug === "iphonepriv")!;
   const sorted = allProjects
@@ -34,7 +33,6 @@ export default async function ProjectsPage() {
         project.slug !== featured.slug &&
         project.slug !== top2.slug &&
         project.slug !== top3.slug &&
-        project.slug !== top4.slug &&
         project.slug !== top5.slug &&
         project.slug !== top6.slug,
     )
@@ -49,10 +47,10 @@ export default async function ProjectsPage() {
       <Navigation />
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl font-serif">
             Productos
           </h2>
-          <p className="mt-4 text-zinc-400">
+          <p className="mt-4 text-zinc-400 font-serif text-2xl">
             Nuestro Productos, si te interesa alguno nos puedes contactar!
           </p>
         </div>
@@ -80,15 +78,15 @@ export default async function ProjectsPage() {
 
                 <h2
                   id="featured-post"
-                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
+                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-serif"
                 >
                   {featured.title}
                 </h2>
-                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300 font-serif">
                   {featured.description}
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">
-                  <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+                  <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block font-serif">
                     Ver el producto <span aria-hidden="true">&rarr;</span>
                   </p>
                 </div>
@@ -96,8 +94,8 @@ export default async function ProjectsPage() {
             </Link>
           </Card>
 
-          <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-            {[top2, top3, top4, top5, top6].map((project) => (
+          <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 font-serif">
+            {[top2, top3, top5, top6].map((project) => (
               <Card key={project.slug}>
                 <Article project={project} views={views[project.slug] ?? 0} />
               </Card>
@@ -107,7 +105,7 @@ export default async function ProjectsPage() {
         <div className="hidden w-full h-px md:block bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 font-serif">
             {sorted
               .filter((_, i) => i % 3 === 0)
               .map((project) => (
@@ -116,7 +114,7 @@ export default async function ProjectsPage() {
                 </Card>
               ))}
           </div>
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 font-serif">
             {sorted
               .filter((_, i) => i % 3 === 1)
               .map((project) => (
@@ -125,7 +123,7 @@ export default async function ProjectsPage() {
                 </Card>
               ))}
           </div>
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 font-serif">
             {sorted
               .filter((_, i) => i % 3 === 2)
               .map((project) => (
