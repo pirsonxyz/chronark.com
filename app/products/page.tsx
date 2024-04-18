@@ -94,8 +94,8 @@ export default async function ProjectsPage() {
             ))}
           </div>
         </div>
+        <p className=" text-slate-50 font-serif text-4xl justify-between font-bold">Otros Productos</p>
         <div className="hidden w-full h-px md:block bg-zinc-800" />
-
         <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
           <div className="grid grid-cols-1 gap-4 font-serif">
             {sorted
@@ -106,6 +106,7 @@ export default async function ProjectsPage() {
                 </Card>
               ))}
           </div>
+          
           <div className="grid grid-cols-1 gap-4 font-serif">
             {sorted
               .filter((_, i) => i % 3 === 1)
@@ -114,6 +115,7 @@ export default async function ProjectsPage() {
                   <Article project={project} views={views[project.slug] ?? 0} />
                 </Card>
               ))}
+            
           </div>
           <div className="grid grid-cols-1 gap-4 font-serif">
             {sorted
@@ -123,6 +125,7 @@ export default async function ProjectsPage() {
                   <Article project={project} views={views[project.slug] ?? 0} />
                 </Card>
               ))}
+            
           </div>
         </div>
       </div>
