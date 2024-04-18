@@ -12,18 +12,8 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 		<Link href={`https://futurussjt.vercel.app/products/${project.slug}`}>
 			<article className="p-4 md:p-8">
 				<div className="flex justify-between gap-2 items-center">
-					<span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-						{project.date ? (
-							<time dateTime={new Date(project.date).toISOString()}>
-								{Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(
-									new Date(project.date),
-								)}
-							</time>
-						) : (
-							<span>Pronto</span>
-						)}
-					</span>
-					<span className="text-zinc-500 text-xs  flex items-center gap-1">
+					
+					<span className="text-zinc-500 text-sm flex items-center gap-1">
 						<Eye className="w-4 h-4" />{" "}
 						{Intl.NumberFormat("en-US", { notation: "compact" }).format(views)}
 					</span>
