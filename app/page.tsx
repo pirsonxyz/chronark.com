@@ -39,16 +39,6 @@ export default function Home() {
         <h2 className="text-2xl text-zinc-500">
           Un paso hacia el futuro.
         </h2>
-        <h2 className="text-sm text-zinc-500 ">
-          Made By{" "}
-          <Link
-            target="_blank"
-            href="https://github.com/pirsonxyz"
-            className="underline duration-500 hover:text-zinc-300"
-          >
-            Pirson Bethancourt.
-          </Link>
-        </h2>
         <SpeedInsights />
         <Analytics />
       </div>
